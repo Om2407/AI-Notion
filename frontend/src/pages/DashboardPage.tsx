@@ -30,7 +30,7 @@ export default function DashboardPage() {
     );
   }
 
-  const maxActivity = Math.max(...(data?.weeklyActivity.map((d) => d.count) || [1]), 1);
+  const maxActivity = Math.max(...((data?.weeklyActivity ?? []).map((d) => d.count).concat([1])), 1);
 
   return (
     <div className="min-h-screen bg-zinc-950">
