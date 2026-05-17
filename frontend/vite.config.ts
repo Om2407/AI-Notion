@@ -6,10 +6,10 @@ export default defineConfig({
   server: {
     port: 5173,
     proxy: {
-      "/auth": "http://localhost:5000",
-      "/notes": "http://localhost:5000",
-      "/shared": "http://localhost:5000",
-      "/insights": "http://localhost:5000",
+      "/auth": "https://ai-notion.onrender.com",
+      "/notes": "https://ai-notion.onrender.com",
+      "/shared": "https://ai-notion.onrender.com",
+      "/insights": "https://ai-notion.onrender.com",
     },
   },
 });
